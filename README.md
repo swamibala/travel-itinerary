@@ -1,4 +1,4 @@
-# Travel Itinerary Agent
+# Travel Itinerary AI Agent using Langgraph ReACT Agent
 
 ## Pre-requisites
 - uv
