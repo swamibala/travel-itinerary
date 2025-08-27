@@ -28,8 +28,18 @@ def search_flight(
     travelClass: Optional[str] = None
 ) -> str:
     """
-    Search for flights using SerpAPI's Google Flights and return the top 3 options.
-    Looks first in 'best_flights', then falls back to 'other_flights'.
+    A tool that uses SerpAPI to search for flights and return the top 3 options.
+    
+    Args:
+        originLocationCode (str): The origin location code for the flight.
+        destinationLocationCode (str): The destination location code for the flight.
+        departureDate (str): The departure date for the flight in 'YYYY-MM-DD' format.
+        returnDate (Optional[str], optional): The return date for the flight in 'YYYY-MM-DD' format. Defaults to None.
+        adults (int, optional): The number of adults in the flight. Defaults to 1.
+        travelClass (Optional[str], optional): The travel class for the flight. Defaults to None.
+
+    Returns:
+        str: A string containing the top 3 flight options.
     """
 
     if not SERP_API_KEY:
