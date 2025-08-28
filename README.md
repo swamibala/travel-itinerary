@@ -8,5 +8,10 @@
 - Update .env with SERPAPI API Key
 - Update .env with GOOGLE_API_KEY (Get from https://aistudio.google.com/apikey)
 
-## Travel Itinerary AI Agent
+## To Test in Terminal
+```
+uv sync
+uv run app.py
 
+Enter your message: Plan a trip from London to Paris
+```
