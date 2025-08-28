@@ -1,4 +1,17 @@
-# Travel Itinerary AI Agent using Langgraph ReACT Agent
+# Travel Itinerary AI Agent using Langgraph ReAct Agent
+Travel Itinerary AI Agent using Langgraph's prebuilt ReAct Agent for quick prototyping.
+- search_flight tool calls Google Fligts API through SERP API to fetch top 3 best flight options
+- search_hotel tool calls Google Hotel API through SERP API to fetch top 3 hotels based on google ratings.
+
+```mermaid
+graph TD
+    User[User] -->|Input Query| Agent[ReAct Agent]
+    Agent -->|Reason| LLM[LLM]
+    LLM --> Agent
+    Agent -->|Action| Tools[Tools]
+    Tools -->|Observe| Agent
+    Agent -->|Response| User
+```
 
 ## Pre-requisites
 - uv
