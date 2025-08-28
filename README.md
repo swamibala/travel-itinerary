@@ -8,7 +8,7 @@ graph TD
     User[User] -->|Input Query| Agent[ReAct Agent]
     Agent -->|Reason| LLM[LLM]
     LLM --> Agent
-    Agent -->|Action| Tools[Tools]
+    Agent -->|Act| Tools[Tools]
     Tools -->|Observe| Agent
     Agent -->|Response| User
 ```
